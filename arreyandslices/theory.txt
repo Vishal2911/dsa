@@ -1,0 +1,67 @@
+Arrays:
+
+An array is a fixed-size sequence of elements of the same type.
+The length of an array is part of its type, which means arrays cannot be resized.
+Slices:
+
+A slice is a dynamically-sized, flexible view into the elements of an array.
+Slices are more versatile than arrays and are commonly used in Go.
+Syntax:
+
+Arrays:
+
+go
+Copy code
+var arr [5]int // array of 5 integers
+arr := [5]int{1, 2, 3, 4, 5} // array with initialization
+Slices:
+
+go
+Copy code
+var slice []int // slice of integers
+slice := []int{1, 2, 3, 4, 5} // slice with initialization
+2. Common Operations
+Insertion:
+
+Arrays:
+
+Direct assignment since arrays are fixed-size.
+go
+Copy code
+arr[0] = 10
+Slices:
+
+Use the built-in append function.
+go
+Copy code
+slice = append(slice, 10)
+Deletion:
+
+Arrays:
+
+Since arrays are fixed in size, deletion isn't typically performed; however, elements can be set to zero values.
+go
+Copy code
+arr[0] = 0
+Slices:
+
+Use slicing to remove elements.
+go
+Copy code
+// Remove element at index i
+slice = append(slice[:i], slice[i+1:]...)
+Traversal:
+
+Arrays and Slices:
+Use a for loop.
+go
+Copy code
+// Array traversal
+for i := 0; i < len(arr); i++ {
+    fmt.Println(arr[i])
+}
+
+// Slice traversal
+for i, v := range slice {
+    fmt.Println(i, v)
+}
