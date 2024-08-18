@@ -31,35 +31,11 @@ An array of integers, e.g., [1, 2, 3, 4, 5].
 Output:
 Reversed Array: [5, 4, 3, 2, 1]
 
-Problem Statement 4: Remove Duplicates from a Slice
-Task:
-Write a Go function that removes duplicate elements from a slice of integers and returns a new slice with only unique elements.
 
-Input:
-A slice of integers, e.g., [1, 2, 2, 3, 4, 4, 5].
 
-Output:
-Unique Elements: [1, 2, 3, 4, 5]
 
-Problem Statement 5: Find the Intersection of Two Arrays
-Task:
-Write a Go function that takes two arrays and returns a new array containing the elements that appear in both arrays.
 
-Input:
-Two arrays of integers, e.g., [1, 2, 3, 4, 5] and [3, 4, 5, 6, 7].
 
-Output:
-Intersection: [3, 4, 5]
-
-Problem Statement 6: Rotate an Array
-Task:
-Write a Go function that rotates the elements of an array to the right by a given number of steps.
-
-Input:
-An array of integers, e.g., [1, 2, 3, 4, 5] and a number of steps, e.g., 2.
-
-Output:
-Rotated Array: [4, 5, 1, 2, 3]
 
 Problem Statement 7: Find the Second Largest Element
 Task:
